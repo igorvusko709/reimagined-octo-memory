@@ -1,0 +1,16 @@
+        newCollage.shapes[shapeIndex] = shapeReducer.reduce(
+            newCollage.shapes[shapeIndex],
+            action
+        )
+        
+        return newCollage
+    }
+case .edit:
+            newState.collage = shapesTranslator.translate(
+                gestureState,
+                in: newState.collage
+            )
+        }
+        
+        return newState
+    }
